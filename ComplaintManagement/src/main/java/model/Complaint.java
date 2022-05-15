@@ -17,7 +17,7 @@ public class Complaint {
 			if (con1 == null) 
 			{return "Error while connecting to the database for inserting."; } 
 			// create a prepared statement
-			String query = " insert into complaint('ComplaintId','CustomerId','ComplaintDate','Complaint')"
+			String query = "insert into complaint(`ComplaintId`,`CustomerId`,`ComplaintDate`,`Complaint`)"
 					+ " values (?, ?, ?, ?)"; 
 			PreparedStatement preparedStmt = con1.prepareStatement(query); 
 			// binding values

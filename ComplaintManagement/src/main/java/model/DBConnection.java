@@ -11,7 +11,7 @@ public class DBConnection {
 		try {
 			
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/EGCompDb", "root", "");
+			con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:4306/complaint", "root", "");
 			
 			//for testing
 			System.out.print("Successfully Connected");
